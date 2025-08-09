@@ -138,11 +138,10 @@ public class GameManager : MonoBehaviour
         }
 
         yield return new WaitForSeconds(1f);
-
-        State = eStateGame.GAME_OVER;
-
         if (m_boardController.IsWinGame()) isWin = true;
         else if (!m_boardController.IsLoseGame()) isWin = false;
+        State = eStateGame.GAME_OVER;
+
         if (m_levelCondition != null)
         {
             m_levelCondition.ConditionCompleteEvent -= GameOver;

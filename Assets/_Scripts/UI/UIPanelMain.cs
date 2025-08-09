@@ -29,10 +29,6 @@ public class UIPanelMain : MonoBehaviour, IMenu
         m_mngr = mngr;
     }
 
-    //private void OnClickTimer()
-    //{
-    //    m_mngr.LoadLevelTimer();
-    //}
 
     private void OnClickMoves()
     {

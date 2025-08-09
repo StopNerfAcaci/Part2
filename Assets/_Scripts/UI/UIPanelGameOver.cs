@@ -38,7 +38,7 @@ public class UIPanelGameOver : MonoBehaviour, IMenu
     public void Show()
     {
         this.gameObject.SetActive(true);
-        //result.text = m_mngr.CheckWin() ? "You win" : "You lose";
+        result.text = m_mngr.CheckWin() ? "You win" : "You lose";
     }
 
 }
